@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDIA VERSION APP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Shiny glare effect for Install Button */
+    @keyframes shine {
+      0% { left: -100%; }
+      20% { left: 200%; }
+      100% { left: 200%; }
+    }
+
+    .animate-shine {
+      animation: shine 3.5s infinite ease-in-out;
+    }
+
+    /* Premium Glow shadow */
+    .shadow-neon-emerald {
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4), 0 8px 10px -6px rgba(16, 185, 129, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-100 min-h-screen flex flex-col items-center justify-start p-4 sm:p-6 relative overflow-x-hidden">
+
+  <!-- Ambient background glow effects -->
+  <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+  <div class="fixed bottom-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-emerald-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+
+  <!-- Main Container -->
+  <div class="w-full max-w-md sm:max-w-xl md:max-w-2xl space-y-6 relative z-10 my-auto">
+    
+    <!-- 1. Heading -->
+    <div class="text-center py-2 space-y-1">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-center bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400 bg-clip-text text-transparent uppercase tracking-wider">
+        INDIA VERSION APK
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-400 font-medium">Fast, Secure & Unlimited Access</p>
+    </div>
+
+    <!-- 2. 16:9 Video Player -->
+    <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900/90 border border-slate-700/50 shadow-2xl backdrop-blur-md group">
+      <video 
+        id="myVideo"
+        class="w-full h-full object-cover" 
+        controls 
+        preload="metadata"
+        crossorigin="anonymous">
+        <source src="https://raw.githubusercontent.com/cronyff644/Proxy/main/New%20Project%2086%20[6E1A73A].mp4" type="video/mp4">
+        Aapka browser video tag support nahi karta.
+      </video>
+    </div>
+
+    <!-- 3. Downloads & Online Automatic Increasing Counters -->
+    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+      <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur-md rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-lg hover:border-slate-700/60 transition-all">
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1 flex items-center gap-1.5">
+          <i class="fa-solid fa-cloud-arrow-down text-emerald-400 text-sm"></i> Total Downloads
+        </div>
+        <div id="downloadsCount" class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          12,450
+        </div>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800/80 backdrop-blur-md rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-lg hover:border-slate-700/60 transition-all">
+        <div class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1 flex items-center justify-center gap-2">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          Live Active Users
+        </div>
+        <div id="onlineCount" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 tracking-tight">
+          1,280
+        </div>
+      </div>
+    </div>
+
+    <!-- Gap for design spacing -->
+    <div class="my-10 sm:my-14"></div>
+
+    <!-- 4. 16:9 Premium Box (Bigger PNG Icon, Stars & Shining Install Button) -->
+    <div class="relative aspect-[16/9] w-full rounded-3xl bg-slate-900/80 border border-slate-700/60 p-5 sm:p-7 flex flex-col justify-between shadow-2xl backdrop-blur-xl overflow-hidden group">
+      
+      <!-- Ambient card internal glow -->
+      <div class="absolute -right-10 -top-10 w-36 h-36 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+      <!-- Top Section: 1:1 PNG Icon + Text + 5 Stars -->
+      <div class="flex items-center gap-4 sm:gap-5 relative z-10">
+        <!-- 1:1 PNG Icon -->
+        <div class="relative shrink-0">
+          <img 
+            src="https://raw.githubusercontent.com/cronyff644/website/main/WhatsApp%20Image%202026-10-26%20at%208.51.10%20PM.jpeg" 
+            alt="Proxy Server Icon" 
+            class="w-20 h-20 sm:w-24 sm:h-24 aspect-square rounded-2xl object-cover bg-slate-800 border-2 border-slate-700/80 shadow-xl"
+          />
+        </div>
+        
+        <!-- App Info & Stars -->
+        <div class="flex flex-col justify-center space-y-1">
+          <span class="text-[10px] sm:text-xs font-bold tracking-widest text-emerald-400 uppercase bg-emerald-500/10 px-2 py-0.5 rounded-md w-fit border border-emerald-500/20">Official Release</span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-white leading-tight">
+            INDIA VERSION APP
+          </h2>
+          <div class="flex items-center gap-1.5 text-amber-400 text-base">
+            <div class="flex text-amber-400 gap-0.5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="text-xs text-slate-300 font-bold ml-1">5.0</span>
+            <span class="text-xs text-slate-500 font-medium">(28.4k reviews)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Green Install Button with Continuous Shining Glare -->
+      <div class="w-full relative z-10 mt-2">
+        <a 
+          href="https://earnsio.in/click/u/66/o/70" 
+          class="relative w-full overflow-hidden bg-gradient-to-r from-emerald-500 via-emerald-600 to-teal-500 hover:from-emerald-400 hover:to-teal-400 active:scale-[0.99] text-white font-extrabold py-3.5 sm:py-4 px-6 rounded-2xl text-center flex items-center justify-center gap-3 shadow-neon-emerald transition-all duration-300">
+          
+          <!-- Moving Light Flare/Shinning Effect -->
+          <span class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/35 to-transparent -skew-x-12 animate-shine pointer-events-none"></span>
+
+          <i class="fa-solid fa-download text-lg animate-bounce"></i>
+          <span class="tracking-wide text-sm sm:text-base">INSTALL NOW </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script>
+    // 1. Automatic Counter Increment Script
+    let downloads = 12450;
+    let online = 1280;
+
+    const downloadsElem = document.getElementById('downloadsCount');
+    const onlineElem = document.getElementById('onlineCount');
+
+    setInterval(() => {
+      downloads += Math.floor(Math.random() * 5) + 1;
+      downloadsElem.innerText = downloads.toLocaleString();
+
+      const change = Math.floor(Math.random() * 7) - 3; 
+      online = Math.max(1000, online + change);
+      onlineElem.innerText = online.toLocaleString();
+    }, 2500);
+
+    // 2. Video Opening Frame Capture JS (Sets 1st frame as poster automatically)
+    const video = document.getElementById('myVideo');
+    video.addEventListener('loadeddata', function() {
+      video.currentTime = 0.1;
+    });
+
+    video.addEventListener('seeked', function() {
+      if (!video.getAttribute('data-poster-set')) {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        video.poster = canvas.toDataURL('image/png');
+        video.setAttribute('data-poster-set', 'true');
+        video.currentTime = 0; // reset to beginning
+      }
+    });
+  </script>
+</body>
+</html>
